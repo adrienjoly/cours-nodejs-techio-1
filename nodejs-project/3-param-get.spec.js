@@ -5,7 +5,7 @@ const expect = require('expect.js');
 const fetch = require('node-fetch');
 const { printMessage, countLines } = require('./common/techio');
 
-const CODE_FILE = './3-param-get.js';
+const CODE_FILE = process.env.CODE_FILE || './3-param-get.js';
 
 describe('le serveur devrait', () => {
 
