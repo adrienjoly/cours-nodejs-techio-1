@@ -10,5 +10,3 @@ Modifiez le code ci-dessous puis cliquez sur "Run" pour le tester:
   "stubs": ["2-api.js"],
   "command": "node_modules/mocha/bin/mocha 2-api.spec.js"
 })
-
-Une fois que les tests passent, réaliser l'exercice suivant.

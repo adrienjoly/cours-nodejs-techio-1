@@ -14,5 +14,3 @@ Modifiez le code ci-dessous puis cliquez sur "Run" pour le tester:
   "stubs": ["3-param-get.js"],
   "command": "node_modules/mocha/bin/mocha 3-param-get.spec.js"
 })
-
-Une fois que les tests passent, réaliser l'exercice suivant.

@@ -10,5 +10,3 @@ Modifiez le code ci-dessous puis cliquez sur "Run" pour le tester:
   "stubs": ["1-bonjour.js"],
   "command": "node_modules/mocha/bin/mocha 1-bonjour.spec.js"
 })
-
-Une fois que les tests passent, réaliser l'exercice suivant.
