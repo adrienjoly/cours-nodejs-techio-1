@@ -1,7 +1,7 @@
 exports.printMessage = (message, channel = "Finalisation de l'exercice") =>
   process.env.HIDE_TECHIO_MESSAGES
-    ? console.log('\nTECHIO> message --channel "' + channel + '" "' + message + '"')
-    : {};
+    ? {}
+    : console.log('\nTECHIO> message --channel "' + channel + '" "' + message + '"');
 
 exports.congratulateStudent = () => {
   exports.printMessage(`👌 Nickel ! Ton code valide tout ce qui était demandé !`);
