@@ -1,6 +1,6 @@
 ﻿//const assert = require('assert');
 const expect = require('expect.js');
-const { congratulateStudent, congratulateStudent } = require('./common/techio');
+const { congratulateStudent } = require('./common/techio');
 
 const logged = [];
 let consoleLogAppelé = false;
