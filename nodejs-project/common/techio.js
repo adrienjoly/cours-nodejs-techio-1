@@ -4,7 +4,7 @@ exports.printMessage = (message, channel = "Finalisation de l'exercice") =>
     : console.log(`TECHIO> message --channel "${channel}" "${message}"`);
 
 exports.congratulateStudent = () => {
-  exports.printMessage(`🏆  Bravo, ton programme à l'air de fonctionner correctement et de respecter les consignes de l'exercice !`);
+  exports.printMessage(`🏆  Bravo, ton programme a l'air de fonctionner correctement et de respecter les consignes de l'exercice !`);
   exports.printMessage(``);
   exports.printMessage(`Avant de passer à l'exercice suivant, pense à:`);
   exports.printMessage(`1. 🧹  nettoyer ton code, pour ne garder que les instructions et commentaires nécessaires à son bon fonctionnement;`);
