@@ -53,12 +53,12 @@ describe('le serveur devrait', () => {
   });
 
   it('remplir tous les critères demandés', () => {
-    printMessage(`👌 Nickel ! Ton code valide tout ce qui était demandé !
-    
-    Avant de passer à l'exercice suivant, pense à:
-    1. nettoyer ton code, pour ne garder que les instructions et commentaires nécéssaires à son bon fonctionnement;
-    2. commenter les parties du code les moins évidentes, pour te souvenir à quoi elles servent;
-    3. puis garder une copie du code dans tes notes de cours, de manière à les retrouver rapidement quand tu en auras besoin.`);
+    printMessage(`👌 Nickel ! Ton code valide tout ce qui était demandé !`);
+    printMessage(``);
+    printMessage(`Avant de passer à l'exercice suivant, pense à:`);
+    printMessage(`1. nettoyer ton code, pour ne garder que les instructions et commentaires nécéssaires à son bon fonctionnement;`);
+    printMessage(`2. commenter les parties du code les moins évidentes, pour te souvenir à quoi elles servent;`);
+    printMessage(`3. puis garder une copie du code dans tes notes de cours, de manière à les retrouver rapidement quand tu en auras besoin.`);
   });
   
 });
