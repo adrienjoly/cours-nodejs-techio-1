@@ -1,6 +1,6 @@
 ﻿//const assert = require('assert');
 const expect = require('expect.js');
-const { printMessage } = require('./common/techio');
+const { congratulateStudent, congratulateStudent } = require('./common/techio');
 
 const logged = [];
 let consoleLogAppelé = false;
@@ -36,7 +36,6 @@ describe('le programme devrait', () => {
   it('respecter à la lettre le message demandé', () => {
     //assert.strictEqual(logged.join(), "Hello World");
     expect(logged.join()).to.be("Hello World");
-    printMessage(`👌 Nickel ! Ton code valide tout ce qui était demandé !`);
-    printMessage(`Tu peux passer à l'exercice suivant.`);
+    congratulateStudent();
   })
 });

@@ -3,7 +3,7 @@ const util = require('util');
 const childProcess = require('child_process');
 const expect = require('expect.js');
 const fetch = require('node-fetch');
-const { printMessage, countLines } = require('./common/techio');
+const { congratulateStudent, countLines } = require('./common/techio');
 
 const CODE_FILE = process.env.CODE_FILE || './3-param-get.js';
 
@@ -52,13 +52,6 @@ describe('le serveur devrait', () => {
     expect(countLines(sourceCode)).to.be.within(1, 30);
   });
 
-  it('remplir tous les critères demandés', () => {
-    printMessage(`👌 Nickel ! Ton code valide tout ce qui était demandé !`);
-    printMessage(``);
-    printMessage(`Avant de passer à l'exercice suivant, pense à:`);
-    printMessage(`1. nettoyer ton code, pour ne garder que les instructions et commentaires nécéssaires à son bon fonctionnement;`);
-    printMessage(`2. commenter les parties du code les moins évidentes, pour te souvenir à quoi elles servent;`);
-    printMessage(`3. puis garder une copie du code dans tes notes de cours, de manière à les retrouver rapidement quand tu en auras besoin.`);
-  });
+  it('remplir tous les critères demandés', congratulateStudent);
   
 });

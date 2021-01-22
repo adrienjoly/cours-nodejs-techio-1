@@ -3,7 +3,7 @@ const util = require('util');
 const childProcess = require('child_process');
 const expect = require('expect.js');
 const fetch = require('node-fetch');
-const { printMessage, countLines } = require('./common/techio');
+const { congratulateStudent, countLines } = require('./common/techio');
 
 const CODE_FILE = './2-api.js';
 
@@ -38,10 +38,7 @@ describe('le serveur devrait', () => {
     expect(countLines(sourceCode)).to.be.within(1, 15);
   });
 
-  it('remplir tous les critères demandés', () => {
-    printMessage(`👌 Nickel ! Ton code valide tout ce qui était demandé !`);
-    printMessage(`Tu peux passer à l'exercice suivant.`);
-  });
+  it('remplir tous les critères demandés', congratulateStudent);
 
   // TODO: donner des indices à l'étudiant, en fonction du code qui a été (ou pas) écrit
 
