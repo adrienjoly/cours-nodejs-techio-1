@@ -9,14 +9,14 @@ let consoleLogAppelé = false;
 
 describe('le programme devrait', () => {
 
-  it(`s'exécuter sans erreur`, () => {
+  it(`s'exécuter sans erreur`, async () => {
     const actualConsoleLog = console.log; // backup console
     // mock console
     console.log = function (param) {
       consoleLogAppelé = true;
       logged.push(param);
     };
-    childProcess.fork(CODE_FILE); // load and run student code
+    require(process.cwd() + '/' + CODE_FILE); // load and run student code
     console.log = actualConsoleLog; // restore console
   });
 

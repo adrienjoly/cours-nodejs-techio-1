@@ -2,3 +2,4 @@ node_modules
 .gitsecret/keys/random_seed
 !*.secret
 nodejs-project/*.solution.js
+!nodejs-project/1-bonjour.solution.js
