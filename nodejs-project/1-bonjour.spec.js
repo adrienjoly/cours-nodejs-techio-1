@@ -2,6 +2,8 @@
 const expect = require('expect.js');
 const { congratulateStudent } = require('./common/techio');
 
+const CODE_FILE = process.env.CODE_FILE || './1-bonjour.js';
+
 const logged = [];
 let consoleLogAppelé = false;
 
@@ -14,7 +16,7 @@ describe('le programme devrait', () => {
       consoleLogAppelé = true;
       logged.push(param);
     };
-    require('./1-bonjour.js'); // load and run student code
+    require(CODE_FILE); // load and run student code
     console.log = actualConsoleLog; // restore console
   });
 

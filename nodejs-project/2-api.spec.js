@@ -5,7 +5,7 @@ const expect = require('expect.js');
 const fetch = require('node-fetch');
 const { congratulateStudent, countLines } = require('./common/techio');
 
-const CODE_FILE = './2-api.js';
+const CODE_FILE = process.env.CODE_FILE || './2-api.js';
 
 describe('le serveur devrait', () => {
 
