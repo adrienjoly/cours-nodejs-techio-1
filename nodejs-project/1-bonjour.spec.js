@@ -16,7 +16,7 @@ describe('le programme devrait', () => {
       consoleLogAppelé = true;
       logged.push(param);
     };
-    require(CODE_FILE); // load and run student code
+    childProcess.fork(CODE_FILE); // load and run student code
     console.log = actualConsoleLog; // restore console
   });
 
