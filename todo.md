@@ -1,1 +1,2 @@
+- [ ] donner des indices au moment pertinent. ex: fournir la doc du body parser `json()` si l'étudiant a utilisé `urlencoded()`
 - [ ] faire fonctionner les tests en CI (github actions) => donner accès aux fichiers chiffrés (https://stackoverflow.com/a/61748039/592254)
